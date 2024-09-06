@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <link rel="icon" href="/STDasmatavan.jpg" />
+        <meta name="theme-color" content="#000000"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>STD Asma Tavan</title>
+        
+        <link rel="stylesheet" href="/src/css/styles2.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,1,-25" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,600,1,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,600,1,0" />
+        <script defer  src="/src/js/slide.js"></script>
+    </head>
+<body>
+        <!-----------------  ILK NAVBAR ----------------->
+        <nav class="fnav top-0 z-10 flex justify-center bg-transparent">
+            <div class="top-0 items-center justify-between p-3 flex container h-8">
+                <div class="items-center flex">
+                    <a class="transform transition duration-50 hover:scale-125" href="#"><span class="maili py-3 px-1 material-symbols-outlined">mail</span></a>
+                    <a class="mail text-xs py-2" href="#">stdasmatavan@gmail.com</a>
+                </div>
+                <div  class="items-center flex">
+                    <a class="btmnav-s w-5 h-5 transform transition duration-50 hover:scale-125"  target="_blank" href="https://www.facebook.com/sistemasmatavan/"><img src="/src/images/facebookicon.png" alt=""></a>
+    
+                    <a class=" btmnav-s mx-4 w-5 h-5 transform transition duration-50 hover:scale-125"  target="_blank" href="https://www.instagram.com/stdsistemasmatavan/"><img src="/src/images/instaicon.png" alt=""></a>
+                </div>
+    
+            </div>
+            
+        </nav>
+        <hr class="bg-red-700 h-1">
+        <!-----------------  IKINCI NAVBAR ----------------->
+        <nav class="nav sticky p-3 shadow block backdrop-blur-md">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="text-white text-lg font-bold transform transition duration-50 hover:scale-110 "><img class="w-20" src="/STDasmatavan.jpg" alt="Logo"></a>
+                
+                <!-- Menu Items -->
+                <div class="hidden md:flex space-x-11">
+                    <a href="#" class="text-gray-300 hover:text-orange-500 nav-link">Anasayfa</a>
+                    <a href="#" class="text-gray-300 hover:text-orange-500 nav-link">Hakkımızda</a>
+                    <a href="#" class="text-gray-300 hover:text-orange-500 nav-link">Galeri</a>
+                    <a href="#" class="text-orange-500 nav-link ">İletişim</a>
+                </div>
+    
+    
+                            <!-- Language Selector -->
+                            <div class="relative hidden md:block">
+                                <button id="language-toggle" class= "nav-link text-gray-300 hover:text-orange-500 focus:outline-none">
+                                    Dil
+                                    <svg class="w-4 h-4 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </button>
+                                <div id="language-menu" class="hidden absolute right-0 mt-2 w-20 bg-white rounded-lg shadow-lg z-10">
+                                    <a href="#" class="block px-4 py-2 bg-orange-400 hover:bg-gray-200"><img class="justify-center w-5" src="/src/images/Flag_of_the_United_Kingdom_(1-2).svg.png" alt="">English</a>
+                                    <a href="#" class="block px-4 py-2 bg-orange-400 hover:bg-gray-200"><img class="w-5" src="/src/images/turkishflag.png" alt="">Türkçe</a>
+                                    <a href="#" class="block px-4 py-2 bg-orange-400 hover:bg-gray-200"><img class="w-5" src="/src/images/Flag_of_the_Arab_League.svg.png" alt="">عربي</a>
+                                </div>
+                            </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-300 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="z-50 w-full absolute -mx-2  my-2 hidden bg-white bg-opacity-50 backdrop-blur-xl">
+                <hr>
+                <a href="#" class="block px-4 py-3 text-gray-300 hover:bg-orange-600 hover:text-white">Anasayfa</a>
+                <a href="#" class="block px-4 py-3 text-gray-300 hover:bg-orange-600 hover:text-white">Hakkımızda</a>
+                <a href="#" class="block px-4 py-3 text-gray-300 hover:bg-orange-600 hover:text-white">Galeri</a>
+                <a href="#" class="block px-4 py-3 text-gray-300 hover:bg-orange-600 hover:text-white">İletişim</a>
+                
+            </div>
+        </nav>
+        <div class="hr-container-con">
+            <hr class="hr-line-con">
+            <span class="hr-text-con text-xl">İLETİŞİM</span>
+        </div>
+
+        <div class="flex justify-center h-96">
+            <div class=" max-w-64 shadow-md rounded-lg ">
+                <span class="p-5 text-3xl">MERKEZ</span>
+                <p class="m-4 text-xs"><span class="pr-2 material-symbols-outlined">deskphone</span>+90 555 555 55 55</p>
+                <p class="m-4 text-xs"><span class="pr-2 material-symbols-outlined">call </span>+90 555 555 55 55</p>
+                <p class="m-4 text-xs"><span class="pr-2 material-symbols-outlined">mail</span>stdasmatavan@gmail.com</p>
+                <p class="m-4 text-xs"><span class="pr-2 material-symbols-outlined">home</span>Yeşil evler mah, Taşköprü Cd. no 78/0, 27700 Nizip/Gaziantep</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.1722830002464!2d37.776495526990175!3d36.998658656222936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x153191b8f3c62e1b%3A0xd003b4a997aa34e3!2zU1REIEFTTUEgVEFWQU4gREnFniBUxLBDIExURCDFnlTEsA!5e0!3m2!1sen!2str!4v1724252652326!5m2!1sen!2str" width="600" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        
+        <div class="h-96">
+
+        </div>
+
+
+
+
+
+                <!-----------------  FOOTER ----------------->
+        <div class="ftr-div w-full h-80 bg-gray-800">
+            <footer class="bg-gray-800 text-gray-300">
+                <div class="ftr-grid grid grid-cols-1 md:grid-cols-3 ml-8 ">
+                    <!-- Logo and About Section -->
+                    <div class=" shadow-2xl p-5 transform transition duration-300 hover:scale-95">
+                        <h3 class="text-white text-xs font-bold mb-4">STD Sistem Asma Tavan</h3>
+                        <p class="text-gray-400 text-xs">Şirketiniz hakkında kısa bir açıklama buraya gelebilir. Misyonunuzu, vizyonunuzu veya diğer önemli bilgileri bu alanda belirtebilirsiniz.</p>
+                    </div>
+            
+                    <!-- Quick Links Section -->
+                    <div class=" p-5 shadow-2xl transform transition duration-2000 hover:scale-95">
+                        <h3 class="text-white text-xs font-bold mb-4">Kurumsal</h3>
+                        <ul class="flex flex-col text-xs ">
+                            <li class="py-3"><a href="#" class="ftrlnk ">Hakkımızda</a></li>
+                            <li class="py-3"><a href="#" class="ftrlnk ">Anasayfa</a></li>
+                            <li class="py-3"><a href="#" class="ftrlnk ">Galeri</a></li>
+                            <li class="py-3"><a href="#" class="ftrlnk ">İletişim</a></li>
+                        </ul>
+                    </div>
+            
+                    <!-- Contact Information Section -->
+                    <div class=" shadow-2xl p-5 transform transition duration-2000 hover:scale-95">
+                        <h3 class="text-white text-xs font-bold mb-4">İletişim Bilgileri</h3>
+                        <p class="m-4 text-xs"><span class="pr-2 material-symbols-outlined">deskphone</span>+90 555 555 55 55</p>
+                        <p class="m-4 text-xs"><span class="pr-2 material-symbols-outlined">call </span>+90 555 555 55 55</p>
+                        <p class="m-4 text-xs"><span class="pr-2 material-symbols-outlined">mail</span>stdasmatavan@gmail.com</p>
+                        <p class="m-4 text-xs"><span class="pr-2 material-symbols-outlined">home</span>Gaziantep/Nizip</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <nav class="btmnav shadow-2xl bottom-0 z-10 flex justify-center h-10">
+            <div class="top-0 items-center justify-between p-3 flex container h-10">
+                <div class="items-center flex">
+                    
+                    <a href="#" class="btmnav-log transform transition duration-50 hover:scale-125"><img class="w-14" src="/STDasmatavan.jpg" alt="Logo"></a>
+                </div>
+                <div class="btmnav-div text-sm text-center text-white">
+                    &copy; 2024 Std Asma Tavan. Tüm hakları saklıdır.
+                </div>
+                <div  class="items-center flex">
+                    <a class="btmnav-s  w-6 h-6 transform transition duration-50 hover:scale-125"  target="_blank" href="https://www.facebook.com/sistemasmatavan/"><img src="/src/images/facebookicon.png" alt=""></a>
+    
+                    <a class="btmnav-s  mx-4 w-6 h-6 transform transition duration-50 hover:scale-125"  target="_blank" href="https://www.instagram.com/stdsistemasmatavan/"><img src="/src/images/instaicon.png" alt=""></a>
+                </div>
+    
+            </div>
+        </nav>
+    
+    
+        
+
+
+
+
+
+
+    
+
+    
+    <script src="/src/js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+</body>
+</html>

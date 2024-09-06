@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/logo2.jpg" />
+    <meta name="theme-color" content="#000000"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STD Asma Tavan</title>
+    
+    <link rel="stylesheet" href="/src/css/styles2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,1,-25" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,600,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,600,1,0" />
+    <script defer  src="/src/js/slide.js"></script>
+</head>
+<body>
+    <!-----------------  ILK NAVBAR ----------------->
+    <nav class="fnav top-0 z-10 flex justify-center bg-transparent">
+        <div class="top-0 items-center justify-between p-3 flex container h-8">
+            <div class="items-center flex">
+                <a class="transform transition duration-50 hover:scale-125" href="mailto:stdasmatavan@gmail.com"><span class="maili py-3 px-1 material-symbols-outlined">mail</span></a>
+                <a class="mail text-xs py-2" href="mailto:stdasmatavan@gmail.com">stdasmatavan@gmail.com</a>
+            </div>
+            <div  class="items-center flex">
+                <a class="btmnav-s w-5 h-5 transform transition duration-50 hover:scale-125"  target="_blank" href="https://www.facebook.com/sistemasmatavan/"><img src="/src/images/facebookicon.png" alt=""></a>
+
+                <a class=" btmnav-s mx-4 w-5 h-5 transform transition duration-50 hover:scale-125"  target="_blank" href="https://www.instagram.com/stdsistemasmatavan/"><img src="/src/images/instaicon.png" alt=""></a>
+            </div>
+
+        </div>
+        
+    </nav>
+    <hr class="bg-red-700 h-1">
+    <!-----------------  IKINCI NAVBAR ----------------->
+    <nav class="nav sticky p-3 shadow block backdrop-blur-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-white text-lg font-bold transform transition duration-50 hover:scale-110 "><img class="w-20" src="/logo2.jpg" alt="Logo"></a>
+            
+            <!-- Menu Items -->
+            <div class="hidden md:flex space-x-11">
+                <a href="#" class="text-gray-300 hover:text-orange-500 nav-link">HOME</a>
+                <a href="#" class="text-gray-300 hover:text-orange-500 nav-link">ABOUT US</a>
+                <a href="#" class="text-gray-300 hover:text-orange-500 nav-link">PRODUCTS</a>
+                <a href="#" class="text-gray-300 hover:text-orange-500 nav-link">CONTACT</a>
+            </div>
+
+
+                        <!-- Language Selector -->
+                        <div class="relative hidden md:block">
+                            <button id="language-toggle" class= "nav-link text-gray-300 hover:text-orange-500 focus:outline-none">
+                                LANGUAGE
+                                <svg class="w-4 h-4 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div id="language-menu" class="hidden absolute right-0 mt-2 w-20 bg-white rounded-lg shadow-lg z-10">
+                                <a href="#" class="block px-4 py-2 bg-orange-400 hover:bg-gray-200"><img class="justify-center w-5" src="/src/images/Flag_of_the_United_Kingdom_(1-2).svg.png" alt="">English</a>
+                                <a href="#" class="block px-4 py-2 bg-orange-400 hover:bg-gray-200"><img class="w-5" src="/src/images/turkishflag.png" alt="">Türkçe</a>
+                                <a href="#" class="block px-4 py-2 bg-orange-400 hover:bg-gray-200"><img class="w-5" src="/src/images/Flag_of_the_Arab_League.svg.png" alt="">عربي</a>
+                            </div>
+                        </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-300 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="z-50 w-full absolute -mx-2  my-2 hidden bg-white bg-opacity-50 backdrop-blur-xl">
+            <hr>
+            <a href="#" class="block px-4 py-3 text-gray-300 hover:bg-orange-600 hover:text-white">HOME</a>
+            <a href="#" class="block px-4 py-3 text-gray-300 hover:bg-orange-600 hover:text-white">ABOUT US</a>
+            <a href="#" class="block px-4 py-3 text-gray-300 hover:bg-orange-600 hover:text-white">PRODUCTS</a>
+            <a href="#" class="block px-4 py-3 text-gray-300 hover:bg-orange-600 hover:text-white">CONTACT</a>
+            
+        </div>
+    </nav>
+
+        <!-----------------  ARKAPLAN SLIDER ----------------->
+        <div class="slider2-div">
+            <div class="bg-gray-800 slider2 absolute -z-10 top-0 left-0 contrast-125 ">
+                <img class="slider-img blur-sm w-full bg-cover " src="/src/images/silder-03.jpg">
+                <img class="slider-img blur-sm  w-full bg-cover " src="/src/images/silder-04.jpg">
+                <img class="slider-img blur-sm  w-full bg-cover " src="/src/images/silder-06.jpg">
+            </div>
+             <!-----------------  ARKAPLAN SLIDER YAZI ----------------->
+            <span id="slider2-text" class=" hdn absolute left-10 top-2/3 slider2-text text-pretty text-5xl text-orange-500 p-5 shadow-md">THE WORLD’S BRAND <br>IN CEILING SYSTEMS</span>
+        </div>
+
+       
+        <!-----------------  VIDEO VE BIZ KIMIZ ----------------->
+        <div class="bg-gray-800 text-vid">
+            <!-- Sol Taraf: Metinler -->
+            <div class="text-vid-text shadow-2xl hdn">
+                <span class="text-white text-3xl p-8">ABOUT US</span>
+                <p class=" text-white p-11">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim nihil deleniti voluptate corrupti suscipit rem quam quo porro ipsam debitis repellendus consequuntur dicta vero facilis velit dolore, placeat hic! Velit.
+                </p>
+            </div>
+            <!-- Sağ Taraf: Video -->
+            <div class="text-vid-vid hdn">
+                <div class="play-button" id="playButton"></div>
+                <img class="text-vid-vid-vid" src="/tumbnail.png" alt="Tumbnail_Photo">
+                <div id="youtubePopup" class="youtube-popup">
+                    <div class="youtube-content">
+                        <span class="close-btn" id="closeButton">&times;</span>
+                        <iframe id="youtubeIframe" width="560" height="315" src="https://www.youtube.com/embed/Nqqc2FHf9Ug?si=Sw7YZUMQFt7Qcdlx" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hr-container">
+            <hr class="hr-line">
+            <span class="hr-text text-xl hdn">CEILING SYSTEMS MODELS</span>
+        </div>
+        <!-----------------  MODELLER YAZI ----------------->
+        
+        
+        <!-----------------  MODELLER ----------------->
+        <div class="pb-44 pt-36 w-full flex items-center justify-center flex-col bg-gray-800">
+            
+            <div class="shadow-2xl text-center text-2xl font-semibold  text-gray-300  mb-10">Acoustic Models</div>
+            <div class="bg-gray-700 flex items-center justify-center overflow-x-auto shadow-2xl rounded-lg p-2 mb-20 w-full">
+                <div class="slider flex items-center overflow-x-auto shadow-2xl rounded-lg p-2 bg-gray-50 space-x-4">
+                    <div><img class="slider-img object-cover h-44 w-auto max-w-xs md:max-w-sm rounded-lg" src="/src/images/akustik/2.jpg" alt="Slide 2"></div>
+                    <div><img class="slider-img object-cover h-44 w-auto max-w-xs md:max-w-sm rounded-lg" src="/src/images/akustik/3.jpg" alt="Slide 3"></div>
+                    <div><img class="slider-img object-cover h-44 w-auto max-w-xs md:max-w-sm rounded-lg" src="/src/images/akustik/1.jpg" alt="Slide 1"></div>
+                    <div><img class="slider-img object-cover h-44 w-auto max-w-xs md:max-w-sm rounded-lg" src="/src/images/akustik/4.jpg" alt="Slide 4"></div>
+                    <div><img class="slider-img object-cover h-44 w-auto max-w-xs md:max-w-sm rounded-lg" src="/src/images/akustik/5.jpg" alt="Slide 5"></div>
+                    <div><img class="slider-img object-cover h-44 w-auto max-w-xs md:max-w-sm rounded-lg" src="/src/images/akustik/6.jpg" alt="Slide 6"></div>
+                    <div><img class="slider-img object-cover h-44 w-auto max-w-xs md:max-w-sm rounded-lg" src="/src/images/akustik/7.jpg" alt="Slide 7"></div>
+                    <div><img class="slider-img object-cover h-44 w-auto max-w-xs md:max-w-sm rounded-lg" src="/src/images/akustik/8.jpg" alt="Slide 8"></div>
+                    <div><img class="slider-img object-cover h-44 w-auto max-w-xs md:max-w-sm rounded-lg" src="/src/images/akustik/9.jpg" alt="Slide 9"></div>
+                    <div><img class="slider-img object-cover h-44 w-auto max-w-xs md:max-w-sm rounded-lg" src="/src/images/akustik/10.jpg" alt="Slide 10"></div>
+                    <div><img class="slider-img object-cover h-44 w-auto max-w-xs md:max-w-sm rounded-lg" src="/src/images/akustik/11.jpg" alt="Slide 11"></div>
+                    <div><img class="slider-img object-cover h-44 w-auto max-w-xs md:max-w-sm rounded-lg" src="/src/images/akustik/12.jpg" alt="Slide 12"></div>
+                </div>
+            </div>
+            <div class="shadow-2xl text-center text-2xl font-semibold text-gray-300 mt-10 mb-10">PVC MODELS</div>
+            <div class="bg-gray-700 flex items-center justify-center overflow-x-auto shadow-2xl rounded-lg p-2 mb-20 w-full">
+                <div class="slider flex items-center overflow-x-auto shadow-2xl rounded-lg p-2 bg-gray-50">
+                <div><img class="slider-img object-cover h-44 w-44 rounded-lg" src="/src/images/pvc/1.jpg" alt="Slide 1"></div>
+                <div><img class="slider-img object-cover h-44 w-44 rounded-lg" src="/src/images/pvc/2.jpg" alt="Slide 1"></div>
+                <div><img class="slider-img object-cover h-44 w-44 rounded-lg" src="/src/images/pvc/3.jpg" alt="Slide 1"></div>
+                <div><img class="slider-img object-cover h-44 w-44 rounded-lg" src="/src/images/pvc/4.jpg" alt="Slide 1"></div>
+                <div><img class="slider-img object-cover h-44 w-44 rounded-lg" src="/src/images/pvc/5.jpg" alt="Slide 1"></div>
+                <div><img class="slider-img object-cover h-44 w-44 rounded-lg" src="/src/images/pvc/6.jpg" alt="Slide 1"></div>
+                <div><img class="slider-img object-cover h-44 w-44 rounded-lg" src="/src/images/pvc/7.jpg" alt="Slide 1"></div>
+                <div><img class="slider-img object-cover h-44 w-44 rounded-lg" src="/src/images/pvc/8.jpg" alt="Slide 1"></div>
+                <div><img class="slider-img object-cover h-44 w-44 rounded-lg" src="/src/images/pvc/9.jpg" alt="Slide 1"></div>
+                <div><img class="slider-img object-cover h-44 w-44 rounded-lg" src="/src/images/pvc/10.jpg" alt="Slide 1"></div>
+                <div><img class="slider-img object-cover h-44 w-44 rounded-lg" src="/src/images/pvc/11.jpg" alt="Slide 1"></div>
+                <div><img class="slider-img object-cover h-44 w-44 rounded-lg" src="/src/images/pvc/12.jpg" alt="Slide 1"></div>
+                </div>
+            </div>
+
+            <button class="bg-red-500 text-white font-bold rounded-sm py-2 px-6 transform transition duration-2000 hover:bg-white hover:text-red-700 hover:scale-105 hdn ">
+                PRODUCTS
+            </button>
+            
+        </div>
+    <!-----------------  FOOTER ----------------->
+    <div class="ftr-div w-full h-96 bg-gray-800">
+        <footer class="bg-gray-800 text-gray-300 pt-8 h-80">
+            <div class="ftr-grid grid grid-cols-1 md:grid-cols-3 ml-8 ">
+                <!-- Logo and About Section -->
+                <div class="hdn shadow-2xl p-5 transform transition duration-300 hover:scale-95">
+                    <h3 class="text-white text-xs font-bold mb-4">STD SISTEM ASMA TAVAN</h3>
+                    <p class="text-gray-400 text-xs">Şirketiniz hakkında kısa bir açıklama buraya gelebilir. Misyonunuzu, vizyonunuzu veya diğer önemli bilgileri bu alanda belirtebilirsiniz.</p>
+                </div>
+        
+                <!-- Quick Links Section -->
+                <div class="hdn p-5 shadow-2xl transform transition duration-2000 hover:scale-95">
+                    <h3 class="text-white text-xs font-bold mb-4">OTHERS</h3>
+                    <ul class="flex flex-col text-xs">
+                        <li class="py-3"><a href="#" class="ftrlnk ">ABOUT US</a></li>
+                        <li class="py-3"><a href="#" class="ftrlnk ">HOME</a></li>
+                        <li class="py-3"><a href="#" class="ftrlnk ">PRODUCTS</a></li>
+                        <li class="py-3"><a href="#" class="ftrlnk ">CONTACT</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Contact Information Section -->
+                <div class="hdn shadow-2xl p-5 transform transition duration-2000 hover:scale-95">
+                    <h3 class="text-white text-xs font-bold mb-4">CONTACT</h3>
+                    <p class="m-4 text-xs"><span class="pr-2 material-symbols-outlined">deskphone</span>+90 555 555 55 55</p>
+                    <p class="m-4 text-xs"><span class="pr-2 material-symbols-outlined">call </span>+90 555 555 55 55</p>
+                    <p class="m-4 text-xs"><span class="pr-2 material-symbols-outlined">mail</span>stdasmatavan@gmail.com</p>
+                    <p class="m-4 text-xs"><span class="pr-2 material-symbols-outlined">home</span>Gaziantep/Nizip</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <nav class="btmnav shadow-2xl bottom-0 z-10 flex justify-center h-10">
+        <div class="top-0 items-center justify-between p-3 flex container h-10">
+            <div class="items-center flex">
+                
+                <a href="#" class="btmnav-log transform transition duration-50 hover:scale-125"><img class="w-14" src="/logo2.jpg" alt="Logo"></a>
+            </div>
+            <div class="btmnav-div text-sm text-center text-white">
+                &copy; 2024 Std Asma Tavan. Tüm hakları saklıdır.
+            </div>
+            <div  class="items-center flex">
+                <a class="btmnav-s  w-6 h-6 transform transition duration-50 hover:scale-125"  target="_blank" href="https://www.facebook.com/sistemasmatavan/"><img src="/src/images/facebookicon.png" alt=""></a>
+
+                <a class="btmnav-s  mx-4 w-6 h-6 transform transition duration-50 hover:scale-125"  target="_blank" href="https://www.instagram.com/stdsistemasmatavan/"><img src="/src/images/instaicon.png" alt=""></a>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/src/js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script>
+$(document).ready(function(){
+    $('.slider').slick({
+        speed: 9500,
+        slidesToShow: 5,
+        slidesToScroll: 12,
+        autoplay: true,
+        autoplaySpeed: 0,
+        arrows: false,
+        pauseOnHover: false,
+        draggable: false,
+        infinite: true,
+        responsive: [
+
+            {
+                breakpoint: 1600, // Büyük ekranlar için
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 10
+                }
+            },
+            {
+                breakpoint: 1000, // Büyük ekranlar için
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 8
+                }
+            },
+
+            {
+                breakpoint: 680, // Tabletler için
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 4
+                }
+            },
+        ]
+    });
+});
+
+        $(document).ready(function(){
+            $('.slider2').slick({
+                infinite: true,
+                speed:500,
+                slidesToShow: 1,
+                slidesToScroll:1,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                arrows:false,
+                pauseOnHover:false,
+                draggable:false,
+            });
+        });
+    </script>
+    
+</body>
+</html>
